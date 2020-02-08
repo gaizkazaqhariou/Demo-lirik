@@ -22,7 +22,7 @@
             android:layout_height="150dp"
             android:scaleType="centerCrop"
             android:visibility="visible"
-            tools:src="@drawable/balon" />
+            android:src="@drawable/balon" />
 
         <TextView
             android:id="@+id/judulLagu"
