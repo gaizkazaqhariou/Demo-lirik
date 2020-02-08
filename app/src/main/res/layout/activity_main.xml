@@ -6,31 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/balon"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="400dp"
-        tools:layout_editor_absoluteY="50dp"
-        tools:src="@drawable/hiclipart" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/balon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:src="@drawable/balon" />
 
         <TextView
             android:id="@+id/judulLagu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="cursive"
-            android:text="Balonku Ada Lima"
+            android:fontFamily="casual"
+            android:text="Balonku"
             android:textAlignment="center"
-            android:textSize="30dp"
+            android:textSize="35dp"
             android:textStyle=""
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -54,21 +56,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="hijau kuning kelabu"
+            android:id="@+id/textwarna1"
             android:textSize="25dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="merah muda dan biru"
+            android:id="@+id/textwarna2"
             android:textSize="25dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="MELETUS BALON HIJAU, DOOOORRR"
+            android:id="@+id/textwarna3"
             android:textAlignment="center"
             android:textSize="25dp" />
 
@@ -84,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="balonku tinggal 4"
+            android:text="balonku tinggal empat"
             android:textAlignment="textEnd"
             android:textSize="25dp" />
 
@@ -96,6 +98,15 @@
             android:textAlignment="textEnd"
             android:textSize="25dp" />
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="cursive"
+            android:text="Made by Saya"
+            android:textSize="25dp" />
 
+    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
