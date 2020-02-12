@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.BackgroundColorSpan;
+import android.text.style.UnderlineSpan;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,5 +60,12 @@ public class MainActivity extends AppCompatActivity {
         ss3.setSpan(bcsGreen, 14, 19, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView3.setText(ss3);
+
+        //aturan 3
+
+        TextView textView4 = findViewById(R.id.judulLagu);
+        SpannableString judul = new SpannableString("Balonku");
+        judul.setSpan(new UnderlineSpan(), 0, judul.length(), 0);
+        textView4.setText(judul);
     }
 }
